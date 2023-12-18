@@ -1,7 +1,7 @@
 from __future__ import print_function
 import os.path
 import Gmail_Server_Auth
-import XMind_Maps_to_Dict
+# import XMind_Maps_to_Dict
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -30,7 +30,7 @@ def main():
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                r'C:\Users\Froap\_DEV\ApplicationOptimizer\resi.json', SCOPES)
+                r'C:\Users\Froap\_DEV\Gmail_Openings_Parser\resi.json', SCOPES)
             creds = flow.run_local_server(port=0)
         # Save the credentials for the next run
         with open('token.json', 'w') as token:
