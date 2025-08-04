@@ -56,6 +56,8 @@ python Gmail_Messages_by_Label.py
 
 ## Notes
 
+-
+
 - The vectorization uses the `all-MiniLM-L6-v2` model by default, which provides a good balance between performance and accuracy
 - Similarity search is performed using cosine similarity
 - Emails are stored in Notion with their vector embeddings for future similarity searches 
